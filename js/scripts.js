@@ -4,13 +4,13 @@ var output = function(number) {
   for (var i = 1; i <= number; i++) {
     var singleNumber = i;
 
-    if (i % 3 === 0) { // Numbers divisible by 3 are replaced with "ping"
+    if (i % 15 === 0) { // Numbers divisible by 15 are replaced with "ping-pong"
+      singleNumber = "ping-pong"
+    } else if (i % 3 === 0) { // Numbers divisible by 3 are replaced with "ping"
       singleNumber = "ping";
     } else if (i % 5 === 0) { // Numbers divisible by 5 are replaced with "pong"
       singleNumber = "pong";
     }
-
-
     numbers.push(singleNumber);
   };
   return numbers.join('<li>');
