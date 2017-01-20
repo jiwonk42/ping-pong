@@ -1,6 +1,10 @@
 // Business Logic
 var output = function(number) {
-
+  var numbers = [];
+  for (var i = 1; i <= number; i++) {
+    numbers.push(i);
+  };
+  return numbers.join('<li>');
 };
 
 // User Interface Logic
@@ -11,7 +15,7 @@ $(document).ready(function() {
     var number = parseInt($("input#number").val());
     var result = output(number);
 
-    $("#output").text(result);
+    $("#output ul").empty().append("<li>" + result + "</li>");
 
   });
 });
