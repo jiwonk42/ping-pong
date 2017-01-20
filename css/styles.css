@@ -20,11 +20,13 @@ body {
 .sidebar {
   background-color: #90BB90;
   width: 20%;
+  height: 1000px;
   float: left;
+  padding: 20px;
 }
 
 .sidebar h5 {
-  color: #DECFA2;
+  color: #f4deb5;
 }
 
 .sidebar p {
@@ -32,7 +34,13 @@ body {
 }
 
 p.github {
-  color: #6694AE;
+  color: #4e7084;
+}
+
+.content {
+  float: left;
+  width: 70%;
+  padding: 30px;
 }
 
 #output {

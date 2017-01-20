@@ -17,7 +17,7 @@ var output = function(number) {
     };
     numbers = numbers.join('<li>');
   } else {
-    numbers = "Please enter an integer that is equal to or greater than 1";
+    numbers = "Please enter an integer that is equal to or greater than 1.";
   }
 
   return numbers;
