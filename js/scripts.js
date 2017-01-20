@@ -2,7 +2,11 @@
 var output = function(number) {
   var numbers = [];
   for (var i = 1; i <= number; i++) {
-    numbers.push(i);
+    var singleNumber = i;
+    if (i % 3 === 0) {
+      singleNumber = "ping";
+    }
+    numbers.push(singleNumber);
   };
   return numbers.join('<li>');
 };
